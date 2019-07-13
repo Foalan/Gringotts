@@ -45,6 +45,7 @@ Denominations have the following format:
  
      denominations:
        - material: material name or id
+         customid: custommodeldata value int (optional)
          damage: damage value of material (optional)
          displayname: a custom name for the currency item (optional)
          lore: a list of custom item lore text lines (optional)
