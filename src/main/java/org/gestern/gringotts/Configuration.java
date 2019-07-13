@@ -197,6 +197,15 @@ public enum Configuration {
                             denomType.setItemMeta(meta);
                         }
                     }
+                    if (denomConf.contains("customid")) {
+                        int customid = (int) denomConf.getInt("customid"); // returns 0 when path is unset
+                        ItemMeta meta = denomType.getItemMeta();
+                        if (meta != null) {
+                            meta.setCustomModelData​(customid);
+                            denomType.setItemMeta(meta);
+                        }
+                    }
+
 
                     ItemMeta meta = denomType.getItemMeta();
 
